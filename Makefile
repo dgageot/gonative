@@ -1,4 +1,4 @@
-PKG=github.com/inconshreveable/gonative
+PKG=github.com/dgageot/gonative
 WORKSPACE=$(shell pwd)/Godeps/_workspace
 CANONICAL=$(WORKSPACE)/src/$(PKG)
 GODEP=$(WORKSPACE)/bin/godep
@@ -16,7 +16,7 @@ workspace: $(GODEP)
 	$(GODEP) restore
 
 $(CANONICAL):
-	mkdir -p $(WORKSPACE)/src/github.com/inconshreveable
+	mkdir -p $(WORKSPACE)/src/github.com/dgageot
 	ln -s $(shell pwd) $(WORKSPACE)/src/$(PKG)
 
 fmt:

@@ -1,8 +1,8 @@
 {
 	"ImportPath": "_/Users/aes/src/gonative",
-	"GoVersion": "go1.3",
+	"GoVersion": "go1.5.1",
 	"Packages": [
-		"github.com/inconshreveable/gonative"
+		"github.com/dgageot/gonative"
 	],
 	"Deps": [
 		{
